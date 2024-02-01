@@ -1,6 +1,6 @@
 # AtCoder
 
-#DailyTraining(1/30)
+#DailyTrainingEasy15:30(1/30)
 
 A,B,C,D,E=map(int,input().split())
 m=[A,B,C,D,E]
@@ -31,3 +31,18 @@ for i in B:
     ans="No"
     break
 print(ans)
+
+
+#DailyTrainingEasy16:30(2/1)
+
+def base_number(num):
+      remainders = []
+      while True:
+          remainder = num % 2
+          remainders.append(str(remainder))
+          num //= 2
+          if num == 0:
+              remainders.reverse()
+              binary = "".join(remainders)
+              return binary
+              break
