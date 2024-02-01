@@ -46,3 +46,33 @@ def base_number(num):
               binary = "".join(remainders)
               return binary
               break
+            
+A,B=map(int,input().split())
+a=base_number(A)
+b=base_number(B)
+
+c=[]
+
+if len(a)>len(b):
+  for i in range(len(a)-len(b)):
+    c.append(a[i])
+  for j in range(len(b)):
+    if a[j+i+1]==b[j]:
+      c.append("0")
+    else:
+      c.append("1")
+elif len(a)<len(b):
+  for i in range(len(b)-len(a)):
+    c.append(b[i])
+  for j in range(len(a)):
+    if a[j]==b[j+i+1]:
+      c.append("0")
+    else:
+      c.append("1")
+else:
+  for j in range(len(a)):
+    if a[j]==b[j]:
+      c.append("0")
+    else:
+      c.append("1")
+print(int(''.join(c),2))
