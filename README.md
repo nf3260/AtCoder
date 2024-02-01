@@ -1,6 +1,6 @@
 # AtCoder
 
-Daily Training (1/30)
+#DailyTraining(1/30)
 
 A,B,C,D,E=map(int,input().split())
 m=[A,B,C,D,E]
