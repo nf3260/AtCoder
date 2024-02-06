@@ -76,3 +76,21 @@ else:
     else:
       c.append("1")
 print(int(''.join(c),2))
+
+
+
+
+#DailyTrainingEasy15:30(2/6)
+
+N=int(input())
+H=list(map(int,input().split()))
+max=max(H)
+if N==1:
+    ans=1
+else:
+  for i in range(N):
+    if H[i]==max:
+      ans=i+1
+    else:
+      pass
+print(ans)
