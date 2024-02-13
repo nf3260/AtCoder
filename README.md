@@ -94,3 +94,20 @@ else:
     else:
       pass
 print(ans)
+
+#DailyTrainingEasy15:30(2/13)
+
+L,R=map(int,input().split())
+A=["a","t","c","o","d","e","r"]
+k=[]
+for i in range(L,R+1):
+  k.append(A[i-1])
+print(''.join(k))
+
+S=list(map(str,input()))
+a,b=map(int,input().split())
+F=S[a-1]
+S[a-1]=S[b-1]
+S[b-1]=F
+print(''.join(S))
+
