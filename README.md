@@ -111,3 +111,13 @@ S[a-1]=S[b-1]
 S[b-1]=F
 print(''.join(S))
 
+#DailyTrainingEasy16:30(2/15)
+
+S=map(str,input())
+k=[]
+for i in S:
+  if i!="a" and i!="e" and i!="i" and i!="o" and i!="u":
+    k.append(i)
+  else:
+    pass
+print(''.join(k))
