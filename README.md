@@ -121,3 +121,26 @@ for i in S:
   else:
     pass
 print(''.join(k))
+
+
+#DailyTrainingEasy16:30(2/22)
+
+N=int(input())
+S=list(map(str,input()))
+A=[]
+if "x" in S:
+  ans="No"
+else:
+  for i in range(N):
+    A.append(S[i])
+    if "o" in A:
+      ans="Yes"
+    else:
+      ans="No"
+print(ans)
+
+N=int(input())
+A=["L","n","g"]
+for i in range(N):
+  A.insert(1,"o")
+print(''.join(A))
